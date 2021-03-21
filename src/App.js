@@ -29,14 +29,11 @@ const App = () => {
         <div className='contact-form'>
           <div className='logo'></div>
           <form noValidate autoComplete='off'>
-            <div className='title'>צרו קשר ונחזור בהקדם</div>
+            {/* <div className='title'>צרו קשר ונחזור בהקדם</div> */}
             <TextField label='שם מלא:' />
             <TextField label='טלפון:' />
-
             <TextField label='אימייל:' />
-
-            <TextField label='פרטים נוספים:' />
-
+            {/* <TextField label='פרטים נוספים:' /> */}
             <ColorButton
               className='MuiButton-containedPrimary'
               variant='contained'
