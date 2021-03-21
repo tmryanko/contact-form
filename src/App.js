@@ -12,6 +12,7 @@ const ColorButton = withStyles((theme) => ({
   root: {
     // color: theme.palette.getContrastText(purple[500]),
     margin: 10,
+    direction: 'ltr',
     backgroundColor: '#f96e8e',
     '&:hover': {
       backgroundColor: '#f96e8e',
@@ -28,13 +29,13 @@ const App = () => {
         <div className='contact-form'>
           <div className='logo'></div>
           <form noValidate autoComplete='off'>
-            <div className='title'>contact form</div>
+            <div className='title'>צרו קשר ונחזור בהקדם</div>
             <TextField label='שם מלא:' />
-            <TextField label='שם מלא:' />
+            <TextField label='טלפון:' />
 
-            <TextField label='שם מלא:' />
+            <TextField label='אימייל:' />
 
-            <TextField label='שם מלא:' />
+            <TextField label='פרטים נוספים:' />
 
             <ColorButton
               className='MuiButton-containedPrimary'
@@ -42,7 +43,7 @@ const App = () => {
               color='primary'
               endIcon={<SendIcon />}
             >
-              Send
+              שלח
             </ColorButton>
           </form>
         </div>
