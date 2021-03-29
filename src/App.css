@@ -1,21 +1,118 @@
 .App {
-  text-align: center;
-  background-image: url('./images/bg.png');
+  /* text-align: center; */
+  /* background-image: url('./images/bg.png'); */
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
+.AppBar {
+  background-color: rgba(225, 205, 174, 0.6);
+  /* height: 200px; */
+  color: white;
+  display: flex;
+  /* font-size: 16px; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.AppBar > span {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 46px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.body {
+  position: relative;
+  /* background-image: url('./images/body.png');
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+.body > form {
+  position: absolute;
+  top: 40%;
+  left: 50px;
+}
+.steps {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+  width: 100%;
+}
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+}
+.step-card > p {
+  width: 250px;
+  text-align: center;
+  font-size: large;
+  /* font-family: Guttman Miryam; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 39px;
+}
+.step-card > h2 {
+  text-align: center;
+  /* font-size: large; */
+  /* font-family: Guttman Miryam; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+.logo-image {
+  background-image: url('./images/logo.svg');
+  height: 70px;
+  width: 170px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .contact-form {
   background-color: white;
-  height: 60%;
-  width: 60%;
+  /* height: 60%;
+  width: 60%; */
   display: flex;
   border-radius: 20px;
+  align-items: center;
 }
+.title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #e1cdae;
+}
+
+form {
+  display: flex;
+  padding: 30px;
+  width: 272px;
+  text-align: center;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 5px;
+  direction: rtl;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 700px) {
   .contact-form {
     height: 80%;
@@ -23,21 +120,30 @@
     flex-direction: column;
     padding: 10px;
   }
-}
-.title {
-  font-size: 20px;
-  padding-bottom: 10px;
+  .AppBar > span {
+    font-size: 25px;
+    /* font-weight: bold;
+    line-height: 46px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  }
+  .body > form {
+    width: 200px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .step-card > h2 {
+    font-size: 20px;
+  }
+  .step-card > p {
+    font-size: 18px;
+  }
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  gap: 5px;
-  direction: rtl;
-}
 .logo {
   display: flex;
   justify-content: center;
