@@ -8,6 +8,8 @@
   align-items: center; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('./images/bg.png');
+  /* background-size: cover; */
 }
 .AppBar {
   background-color: rgba(225, 205, 174, 0.6);
@@ -48,8 +50,6 @@
   flex-wrap: wrap;
   margin: 50px 0px;
   width: 100%;
-  background-image: url('./images/bg.png');
-  background-size: cover;
 }
 .step-card {
   display: flex;
