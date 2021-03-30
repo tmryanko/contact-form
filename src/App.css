@@ -47,7 +47,7 @@
 .steps {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   margin: 50px 0px;
   width: 100%;
 }
@@ -117,6 +117,9 @@ form {
 }
 
 @media screen and (max-width: 700px) {
+  .App {
+    background-image: url('./images/mbg.png');
+  }
   .contact-form {
     height: 80%;
     width: 50%;
