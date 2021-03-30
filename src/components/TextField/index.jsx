@@ -5,12 +5,18 @@ import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   direction: 'rtl',
+
   palette: {
     primary: {
       main: '#e1cdae',
     },
   },
   overrides: {
+    MuiFormControl: {
+      root: {
+        marginBottom: '20px',
+      },
+    },
     MuiFormLabel: {
       root: {
         '&$focused': {

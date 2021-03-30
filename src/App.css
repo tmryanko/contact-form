@@ -39,8 +39,8 @@
 }
 .body > form {
   position: absolute;
-  top: 40%;
-  left: 50px;
+  top: 30%;
+  left: 100px;
 }
 .steps {
   display: flex;
@@ -48,6 +48,8 @@
   flex-wrap: wrap;
   margin: 50px 0px;
   width: 100%;
+  background-image: url('./images/bg.png');
+  background-size: cover;
 }
 .step-card {
   display: flex;
@@ -64,6 +66,7 @@
   font-weight: 300;
   font-size: 25px;
   line-height: 39px;
+  margin-top: 0;
 }
 .step-card > h2 {
   text-align: center;
