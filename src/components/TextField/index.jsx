@@ -39,12 +39,19 @@ const theme = createMuiTheme({
   },
 });
 
-const TextField = ({ label }) => {
+const TextField = ({ label, type, value, onChange, id, name }) => {
   return (
     <ThemeProvider theme={theme}>
       <MuiTextField
         // InputProps={{ disableUnderline: true }}
         // variant='filled'
+        // error
+        name={name}
+        id={id}
+        onChange={onChange}
+        value={value}
+        type={type}
+        required
         label={label}
         size='small'
       />
